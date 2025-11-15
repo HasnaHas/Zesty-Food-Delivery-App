@@ -1,0 +1,78 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 4%;
+  background: #fff8f2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  color: #8B5E3C;
+  letter-spacing: 1px;
+}
+
+.logo-text .logo-accent {
+  color: #D2A679;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.auth-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #8B5E3C;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #D2A679;
+}
+
+.profile-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 28px;
+  color: #8B5E3C;
+  transition: color 0.3s ease;
+}
+
+.profile-container:hover .profile-icon {
+  color: #D2A679;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #8B5E3C;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.profile-container:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  bottom: -36px;
+}

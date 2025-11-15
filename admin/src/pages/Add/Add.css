@@ -1,0 +1,146 @@
+.add {
+  width: 70%;
+  margin-left: max(5vw, 25px);
+  margin-top: 50px;
+  color: #6d6d6d;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.add form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: #fff8f2;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.add-img-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-img-upload p {
+  font-weight: 500;
+  color: #8B5E3C;
+}
+
+.add-img-upload img {
+  width: 120px;
+  height: 120px;
+  border: 2px dashed #D2A679;
+  border-radius: 10px;
+  object-fit: cover;
+  align-self: flex-start;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-img-upload img:hover {
+  transform: scale(1.05);
+  border-color: #8B5E3C;
+}
+
+.add-product-name, 
+.add-product-description {
+  width: max(40%, 280px);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.add-product-name p, 
+.add-product-description p {
+  font-weight: 500;
+  color: #8B5E3C;
+}
+
+.add-product-name input, 
+.add-product-description textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #c9c9c9;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.add-product-name input:focus, 
+.add-product-description textarea:focus {
+  border-color: #D2A679;
+}
+
+.add-category-price {
+  display: flex;
+  gap: 30px;
+}
+
+.add-category, 
+.add-price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.add-category p, 
+.add-price p {
+  font-weight: 500;
+  color: #8B5E3C;
+}
+
+.add-category select, 
+.add-price input {
+  max-width: 150px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #c9c9c9;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.add-category select:focus, 
+.add-price input:focus {
+  border-color: #D2A679;
+}
+
+.add-btn {
+  max-width: 120px;
+  border: none;
+  padding: 12px;
+  background-color: #8B5E3C;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #D2A679;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .add {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .add-category-price {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .add-product-name, .add-product-description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .add {
+    margin-left: 15px;
+  }
+}

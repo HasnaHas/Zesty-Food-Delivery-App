@@ -1,0 +1,86 @@
+.sidebar {
+  width: 18%;
+  min-height: 100vh;
+  border: 1.5px solid #a9a9a9;
+  border-top: 0;
+  font-size: max(1vw,10px);
+  background-color: #fff8f2; 
+  position: relative;
+}
+
+.sidebar-options {
+  padding-top: 50px;
+  padding-left: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #a9a9a9;
+  border-right: 0;
+  padding: 8px 12px;
+  border-radius: 3px 0px 0px 3px;
+  cursor: pointer;
+  color: #8B5E3C;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.sidebar-option p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.sidebar-option .sidebar-icon {
+  font-size: 20px;
+}
+
+.sidebar-option.active {
+  background-color: #fff0ed;
+  border-color: #8B5E3C;
+  color: #D2A679;
+}
+
+.sidebar-option:hover {
+  background-color: #fdf0e6;
+  color: #D2A679;
+}
+
+/* Hover label for small screens */
+@media (max-width: 900px) {
+  .sidebar-option p {
+    display: none;
+  }
+
+  .sidebar-option::after {
+    content: attr(data-label); /* show label */
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff0ed;
+    color: #8B5E3C;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  .sidebar-option:hover::after {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 450px) {
+  .sidebar-option .sidebar-icon {
+    font-size: 17px;
+  }
+}

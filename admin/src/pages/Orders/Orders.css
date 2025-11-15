@@ -1,0 +1,150 @@
+.order {
+  width: 70%;
+  margin-left: max(5vw, 25px);
+  margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  color: #505050;
+}
+
+.order h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #8B5E3C;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.tabs button.active {
+  background-color: #8B5E3C;
+  color: #fff;
+}
+
+.bulk-actions {
+  margin-bottom: 20px;
+}
+
+.bulk-actions .select-all-btn {
+  background-color: #e80e0f;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.bulk-actions .select-all-btn:hover {
+  background-color: #c00;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-item {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+  align-items: start;
+  gap: 30px;
+  border: 1.5px solid #d2a679;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff8f2;
+  transition: box-shadow 0.3s;
+}
+
+.order-item:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.order-item-food,
+.order-item-name {
+  font-weight: 600;
+}
+
+.order-item-name {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.order-item-address {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.order-item-phone {
+  font-size: 13px;
+  color: #6d6d6d;
+}
+
+.order-item select {
+  background-color: #ffe8e4;
+  border: 1px solid #e80e0f;
+  width: max(11vw, 120px);
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-item .delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+.order-item .delete-btn:hover {
+  background-color: #cc0000;
+}
+
+.order-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 13px;
+}
+
+@media (max-width: 1000px) {
+  .order-item {
+    font-size: 12px;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    padding: 15px 8px;
+  }
+
+  .order-item select {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .order-item img {
+    width: 40px;
+  }
+
+  .bulk-actions .select-all-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}

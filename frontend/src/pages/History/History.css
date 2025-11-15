@@ -1,0 +1,128 @@
+.history {
+  margin: 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.history-icon {
+  font-size: 2rem;
+  color: #8b5e38;
+  margin-right: 10px;
+}
+
+.history h2 {
+  font-size: 28px;
+  color: #8b5e38;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.no-orders {
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+  padding: 30px 0;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.history-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr 0.5fr; /* items | amount | date | status | review | remove */
+  align-items: start;
+  gap: 15px;
+  padding: 15px 20px;
+  border: 1px solid #8b5e38;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s;
+}
+
+.history-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.history-items p {
+  margin: 0 0 5px 0;
+}
+
+.history-amount {
+  font-weight: bold;
+  color: #8b5e38;
+}
+
+.history-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.history-status {
+  display: flex;
+  align-items: center;
+  color: #4caf50;
+}
+
+.status-icon {
+  margin-right: 5px;
+}
+
+.history-review {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.star-icon {
+  color: #ffd700;
+  margin-right: 5px;
+}
+
+.comment-icon {
+  margin-right: 5px;
+}
+
+.remove-btn {
+  background: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+  background: #ff3742;
+}
+
+@media (max-width: 900px) {
+  .history-card {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding: 12px;
+  }
+
+  .history-items, .history-amount, .history-date, .history-status, .history-review, .remove-btn {
+    justify-content: space-between;
+  }
+
+  .history-review p {
+    font-size: 0.8rem;
+  }
+}

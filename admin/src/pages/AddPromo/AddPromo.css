@@ -1,0 +1,85 @@
+.add {
+  width: 70%;
+  margin-left: max(5vw, 25px);
+  margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  color: #6d6d6d;
+}
+
+.add form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: #fff8f2;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.add-product-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.add-product-name p {
+  font-weight: 500;
+  color: #8B5E3C;
+  font-size: 14px;
+}
+
+.add-product-name input,
+.add-product-name textarea,
+.add-product-name select {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #6d6d6d;
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.add-product-name input:focus,
+.add-product-name textarea:focus,
+.add-product-name select:focus {
+  border-color: #D2A679;
+}
+
+.add-product-name textarea {
+  height: 80px;
+  padding-top: 10px;
+  resize: vertical;
+}
+
+.add-btn {
+  max-width: 150px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #8B5E3C;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #D2A679;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .add {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .add {
+    margin-left: 15px;
+  }
+}

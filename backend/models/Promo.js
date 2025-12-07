@@ -6,7 +6,7 @@ const promoSchema = new mongoose.Schema({
   discountType: { type: String, enum: ['percentage', 'fixed'], required: true },
   discountValue: { type: Number, required: true },
   expiry: { type: Date, required: true },
-  usageLimit: { type: Number, default: null }, // null means unlimited
+  usageLimit: { type: Number, default: null },
   usedCount: { type: Number, default: 0 },
   eligibilityType: { type: String, enum: ['all', 'new_users'], default: 'all' },
   minOrderValue: { type: Number, default: 0 },

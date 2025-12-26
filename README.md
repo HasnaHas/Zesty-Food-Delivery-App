@@ -2,6 +2,8 @@
 
 A full-stack MERN (MongoDB, Express, React, Node.js) food delivery application that allows users to browse, order, and manage food items online. This project is built to showcase modern web development skills
 
+![Zesty](mockups/Zesty.png)
+
 ---
 
 ## Features
